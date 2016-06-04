@@ -1,0 +1,2 @@
+\select@language {french}
+~\hfill \textbf {Page}\par 
