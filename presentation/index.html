@@ -48,6 +48,9 @@
 						<small>Créé par David RIGAUX, Mehdi DALAA, Mandry MBUNDU, Maxime LUNDQUIST - CPI1 C2</small>
 					</p>
 					<p> 
+						<small>TIPE</small>
+					</p>
+					<p> 
 						<small>2015-2016</small>
 					</p>
 				</section>
@@ -57,52 +60,36 @@
 					<table border="0">
 						<tbody>
 							<tr>
+								<td></td>
+								<td>Introduction</td>
+							</tr>
+							<tr>
 								<td>1.</td>
-								<td>Historiquement comment est-on arrivé au Big Data</td>
+								<td>Historique du Big Data</td>
 							</tr>
 							<tr>
 								<td>2.</td>
-								<td>Définition</td>
-							</tr>
-							<tr>
-								<td>3.</td>
 								<td>Domaines d'application</td>
 							</tr>
 							<tr>
-								<td>4.</td>
+								<td>3.</td>
 								<td>Outils informatiques et outils mathématiques pour le Big Data</td>
-							</tr>
+							</tr>							
 						</tbody>
 					</table>
 				</section>
-
-
+<!//////////////////////////////////////////////////////////////DAVID////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
 				<section>
-					<h1>Historiquement comment est-on arrivé au Big Data</h1>
-				</section>
-				
-				<section>
- 	
-					<h2>Comment en est on arrivé au Big Data ?</h2>
-					<p>L'arrivée du Big Data est liée au progrès des systèmes de stockage et d'analyse de l'information numérisée</p>
-				</section>
-				
-				<section>
-					<p>De plus l'explosion d'Internet dans les années 2000, le développement des réseaux sociaux et des technologies mobiles ont contribué à la naissance du Big Data</p>
-					<p class="fragment" data-fragment-index="1">En effet depuis les années 2000 les échanges d'informations peut se faire n'importe où, n'importe quand ce qui a causé l'émergence de données trop volumineuse pour être manipulé avec des bases de données relationnelles, c'est ce qui caractérise le Big Data</p>
-				</section>
-
-				
-				
-				
-				
-				<section>
-					<h1>Définition</h1>
+					<h1>Introduction</h1>
+					<img width="502" height="502" src="images/pie.png">
+					<aside class="notes">
+						Nous créons environs 2,5 trillions d'octets de données par jour. En 2 ans nous avons créé 90% des données présentes dans le monde.
+					</aside>
 				</section>
 				<section>
 					<aside class="notes">
-					Terme BigData signifie litéralement....Parmis les definitions celle de Wikepedia qualifie big data d'expression anglophone utilisée pour désigner des ensembles de données tellement gros qu’ils en deviennent difficiles à travailler avec des outils classiques de gestion de base de données. »<br>Les données en questions sont des données numérique et varient du message envoyé (SMS, IM, email), jusqu’à des transactions en ligne passant par les vidéos qu’on publie sur le net, nos positions géographique (géolocalisation), les résultats de recherches scientifiques et pleins d’autres sorte de données.
+					Terme BigData signifie litéralement Mégadonnées, grosses données ou données massives. Ces ensembles sont tellement grand qu'il est difficile de les manipuler avec des outils classiques de gestion de base de données.<br>Les données en questions sont des données numérique et varient du message envoyé, jusqu’à des transactions en ligne passant par les vidéos qu’on publie sur le net, nos positions géographique (géolocalisation), les résultats de recherches scientifiques et pleins d’autres sorte de données.
 					</aside>
 					<p><b><font size="7" color = "#C11B17">Big Data</font></b> = Mégadonnées, grosses données ou données massives</p>
 					<h3 align="left" class="fragment" data-fragment-index="1">Types de données</h3>
@@ -111,70 +98,184 @@
 						<li>Vidéos que nous publions</li>
 						<li>Informations climatiques</li>
 						<li>Signaux GPS</li>
-						<li>Enregistrements transactionneles d'achats en ligne</li>
+						<li>Enregistrements transactionnels d'achats en ligne</li>
 						<li>Et bien encore</li>
 					</ul>
 				</section>
 				<section>
 					<section>
 						<aside class ="notes">
-							Le Big Data est caractérisé par les 3V.   <br>Volume : Quantité de données générée est en pleine expansion et suit une loi quasi exponentielle : e-commerce, réseaux sociaux. Vélocité (Rapidité) : rapidité renouvellement des données n'est plus à démontrer. Nouvelles mise à jours sont sotckés en respect de la devise du big data qui est de tout garder.<br> Variété : Bases de données spécialisées sont en mesure de gérer la multiplicité des formats de données : numérique, texte, image...
+							Le Big Data est caractérisé par les 3V.   <aside class="notes"><ul>
+						<li>Volume : En effet, la quantité de données générée est en pleine expansion et suit une loi quasi exponentielle : e-commerce, réseaux sociaux</li>
+						<li>Vélocité (Rapidité) : La rapidité renouvellement des données n'est plus à démontrer. Nouvelles mise à jours sont stockés en respect de la devise du big data qui est de tout garder.</li>
+						<li>Variété : Les  Bases de données spécialisées sont en mesure de gérer la multiplicité des formats de données : numérique, texte, image...</li></aside>
 						</aside>
 						<h3>Les 3 V</h3>
-						<img width="953" height="590" data-src="images/3V.png">
+						<img width="679" height="600" src="images/3V.png">
 					</section>
 					
 					<section>
 						<aside class="notes">
-							Certaines personne du monde du Big Data pense qu’il n’est pas inutile d’ajouter un quatrième V pour la valeur des données, c’est-à-dire l’utilité de la donnée.
-						</aside>
-						<h3>Un quatrième V ?</h3>
-						<p class="fragment">Certains caractérisent le Big Data avec un quatrième V qui est la <b>Valeur</b></p>
+							Certaines personne du monde du Big Data pense qu’il n’est pas inutile d’ajouter 2V, pour la <b>valeur</b> et la <b>véracité</b> des données, c’est-à-dire l’utilité et la précision de la donnée.	</aside>
+						<h3>5V ?</h3>
+						<p class="fragment">Certains caractérisent le Big Data avec cinq V</p>
+						<img class="fragment" width="788" height="500" src="images/5V.png">
 					</section>
 				
 				</section>
-				
-				
+
+<!//////////////////////////////////////////////////////////////MEHDI////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 				
 				<section>
-					<h1> Domaines d'application</h1>
+					<h1>Historique du Big Data</h1>
 				</section>
 				
 				<section>
- 	
-					<h2>Le marketing</h2>
+					<aside class ="notes">Donc le Big Data représente des données trop volumineuses pour être manipulée avec des bases de données relationnelles.
+											Le modèle relationnel des bases de donnée qu’est ce que c’est ?
+											C’est un modèle qui a été introduit en 1970 par un informaticien d’IBM Edgard Codd. 
+											Le but : établir une séparation + claire entre la représentation physique et logique des données. 
+											C’est ce que l’on cherche dans un SGBD : indépendance physique et logique des données.
+											<br> <br>physique : possibilité de modifier l’organisation physique des données (= l’accès) sans modifier les programmes.
+											logique : possibilité de changer le schéma conceptuel sans modifier les programme.
+											Dans les bases de données relationnelles, l’information est organisée dans des tableaux à 2 dimensions.
+											Et les SGBD relationnel utilise des requêtes SQL pour les manipulé.
+											SQL c’est un language informatique qui a été créer en 1974
+											Donc à partir de 1970 les  bases de données relationnelles vont se répandre. entreprise
+					</aside>
+					<h2>Edgard Codd</h2>
+					<p>Inventeur du modèle relationnel des bases de données</p>
+					<img width="394" height="500" src="images/h1.jpg">
+				</section>
+				
+				<section>
+					<aside class ="notes">Mais à partir des années 2000, avec l’explosion d’internet et le développement des technologies mobiles, les échanges d’information numériques ont considérablement augmentés. Du coup les bases de données relationnelles ont été dépassé. On a donc vu apparaître un nouveau type de base de donnée et système de base de données qui vont s’appeler NOSQL comme leur nom l’indique ne sont pas manipulé uniquement avec des requêtes sql. 
+Les premiers a avoir été confronté aux limites des bases de données relationnels sont les grandes entreprises du web. Comme Ils doivent gérer un énorme volume de données. Ils ont du créer leur propre système de gestion base de base de données:
+</aside>
+					<img width="946" height="500" src="images/h2.jpg">
+				</section>
+				
+				<section>
+					<aside class ="notes">Pour exemple : Google qui doit pouvoir stocker une énorme quantité de donnée, et alimenter continuellement ce stock mais qui doit également effectuer un traitement de ces données a développé son propre système de fichier distribué GoogleFS en 2003 puis Big Table en 2006. D’autre entreprise du web vont suivre et dvpé leur propre SGBD, on retiendra Amazon ou encore Facebook.
+</aside>
+					<h3>Google lance <b>Big Table</b> en 2006</h3>
+					<img width="598" height="337" src="images/h3.png">
+				</section>
+				
+				<section>
+					<aside class ="notes">D’autre entreprise du web vont suivre et dvpé leur propre SGBD, on retiendra Amazon ou encore Facebook</aside>
+					<h3>D'autre entreprises du web ont lancé leur propre système de gestion de base de données</h3>
+					<div class="image123">
+						<div class="imgContainer">
+							<img width="300" height="300" src="images/h4.png">
+							<p>Facebook avec <br> Cassandra Project puis Hbase</p>
+    					</div>
+   
+						<div class="imgContainer">
+							<img width="300" height="300" src="images/h5.png">
+							<p>Amazon avec Dynamo</p>
+    					</div>
+					</div>
+				</section>
+				
+				
+				<section>
+					<aside class ="notes">Par la suite l’américain Doug Cutting s’inspira de GFS et Big Table pour lancer le prototype open source Hadoop en 2008 qui grâce à son modèle de programmation et à son système de fichier hautement distribué est capable de gérer de gigantesques quantités de données non structurées. Hadoop est une technologie qui fait aujourd’hui référence dans l’univers du Big Data.
+Il faut savoir que les systèmes de base de données relationnels ne sont pas pour autant disparu, il reste majoritaire mais montrent cependant leurs limites lorsqu'ils sont utilisés dans un périmètre plus large, tel qu'un site web populaire, visité par des millions d’utilisateurs à travers le mondeg
+</aside>
+					<h3><b>Hadoop</b> lancé par Doug Cutting en 2008</h3>
+					<img width="1000" height="259" src="images/hadoop.png">
+				</section>
+				
+				
+<!//////////////////////////////////////////////////////////////MANDRY////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+				
+				<section>
+					<h1>Domaines d'application</h1>
+					<aside class="notes">Avant l’émergence du Big Data, des cas d’usages de cette technologie existaient déjà. <br>
+										Cependant, grâce à ce dernier, nous pouvons aller beaucoup plus vite et traiter une quantité beaucoup plus importante de données.Les grandes utilisations du Big Data sont</aside>
+				</section>
+				
+				
+				<section>
+					<h2>Domaines d'application</h2>
+					<aside class="notes">On voit par ces cas d’usages que le Big Data touche tous les secteurs et toutes les
+
+sociétés (néanmoins une très grande partie) et nous allons vous présenter l’impact
+
+du big data dans le marketing</aside>
 					<ul>
-						<li>Les entreprises veulent comprendre les comportements et les attentes de leurs clients afin de mieux cibler leurs propositions</li>
-						<li>Elles créent des modèles prédictifs pour anticiper le départ d’un client ou les ventes d’un produit</li>
-						<li>Par exemple, les sites utilisaient jusqu'ici les cookies mais les plus grands sites utilisent le Big Data pour récupérer et analyser les données de navigation en provenance de sites tiers</li>
+						<li>Pressentir la naissance d’une tendance</li><br>
+						<li class="fragment" data-fragment-index="1">Prédire l’évolution d’un phénomène</li><br>
+						<li class="fragment" data-fragment-index="2">Repérer des corrélations pour optimiser une stratégie</li><br>
+						<li class="fragment" data-fragment-index="3">Faire des contrôles pour découvrir une fraude</li><br>
+						<li class="fragment" data-fragment-index="4">Organiser une communication virale</li>
 					</ul>
- 	
+				</section>
+				
+				
+				<section>
+					<aside class="notes">Etant tous des consommateurs, le nombre de consommateur est très important, donc il y a énormément de données à analyser, pour pouvoir influencer le comportement de nouveaux clients, sans perdre les anciens clients.
+Au vu du nombre de données à analyser, c'est ici qu'intervient le Big Data</aside>
+
+					<h2>Le Marketing</h2>
+					<p>Le marketing désigne l'analyse des besoins des consommateurs et l'ensemble des moyens d'action utilisés par les organisations pour influencer leur comportement</p>
 				</section>
 				
 				<section>
- 	
-					<h2>La Santé</h2>
-					<p>Avec la médecine prédictive, c’est-à-dire, prévoir un risque de maladie chez certains patients à partir du génome</p>
- 	
-				</section>
+					<aside class="notes">Pour pouvoir influencer les clients, les entreprises doivent commencer par analyser le comportement des clients. </aside>			
+					<img width="750" height="375" src="images/da1.png">	
+				 </section>
 				
 				<section>
- 	
-					<h2>Le Sport</h2>
-					<p>Certains club posent sur les vêtements des joueurs des capteurs permettant de recueillir des informations sur les joueurs (transpiration, rythme cardiaque et respiratoire…) et ainsi prévenir les risques de blessures</p>
- 	
+					<aside class="notes">L'analyse du comportement en marketing commence par, par exemple en grande distribution, l'étude de la carte de fidélité du client, l'enseigne peut donc analyser les habitudes de consommation des clients et traiter les données pour pouvoir effectuer une analyse prédictive càd se servir des analyses du passé pour prédire le futur. Cette analyse permet enfaite de :</aside>			
+					<img width="749" height="500" src="images/da2.jpg">		
+				 </section>
+				 
+				 
+				 <section>
+					<h2>Analyse du comportement</h2>
+					<aside class="notes">On peut même aller plus loin que cela grâce aux nouvelles innovations, en effet, nous pouvons désormais suivre en temps réel le mouvement des consommateurs dans le magasin ( temps passé dans un rayon, nombre de pas effectués ) grâce à des capteurs localisés dans le boitier des caddies, mais cela que dans le périmètre du magasin</aside>
+					<ul>
+						<li>L'aménagement du magasin</li><br>
+						<li>ré-organisation des produits en rayon sur les étagères</li>
+					</ul>
 				</section>
-				
-				<section> 
+
+				<section>
+					<aside class="notes">Ceci va permettre de faire un profil personnalisé de chaque client, ainsi faire de la micro segmentation c'est-à-dire les classer ( par sexe, âge, revenu, religion...) <br> <br> Les données de tous ces consommateurs sont donc très volumineuses mais les entreprises gèrent le big data et parviennent à traiter ces données pour pouvoir donc créer des profils personnalisés à chaque client, mais ces clients, il faut les garder et savoir ce qu'ils pensent des produits c'est pour ça que</aside>			
+					<img width="512" height="512" src="images/da3.png">		
+				 </section>
+				 
+				 <section>
+					<aside class="notes">La é-réputation, c'est l'image dans notre cas, de l'entreprise sur les réseaux sociaux, c'est donc pour les entreprises le reflet de l'opinion publique.
+Les entreprises peuvent donc visualiser en direct l'impact de leur marque, afin de pouvoir anticiper les mauvaises critiques, qui pourraient tâcher l'image de l'entreprise, ou avoir de réels dégâts sur l'enseigne</aside>			
+					<img width="1235" height="600" src="images/da4.jpg">	
+				 </section>
+				 
+				 <section>
+					 <aside class="notes">Le Big Data intervient également dans l’optimisation des prix, en effet, en 2016, environ 80% de la population française fait des achats sur internet, soit 50 millions de personnes. Ainsi, sans même que les usagers ne le sachent, le prix du marché est basé sur le " dynamic pricing " c’est-à-dire que le prix varie selon la demande mais pas uniquement sur l’achat, également le temps passé sur ce produit (sans même l’acheter, car cela signifie que le client le désire et donc le prix peut quand même augmenter. <br> <br> Le prix devient ainsi personnalisé selon la personne, si la personne visite le même produit sur plusieurs sites, en particulier des concurrents, ou encore si un comparateur de prix est utilisé, etc.. Tout cela dans le but de détourner le client du concurrent et de le fidéliser sans même que celui-ci ne s’en rende compte.</aside>
+					 <h2>L'optimisation des prix</h2>
+				 </section>
+				 
+				  <section>
+					<aside class="notes"> Mais pour mettre tout cela en place, il faut savoir que le big data repose sur des outils mathématiques et informatiques à ne pas négliger </aside>			
+					<img width="1029" height="600" src="images/da5.jpg">		
+				 </section>
+				 
+<!//////////////////////////////////////////////////////////////DAVID////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+ 				<section> 
 					<h1>Outils informatiques et outils mathématiques pour le Big Data</h1>
 				</section>
+				
+
 				<section>
 					<h2>Les outils informatiques</h2>
 				</section>
 				
 				<section>
 					<aside class="notes">
-						Le cloud computing est l’exploitation de la puissance ou de stockage de serveurs informatiques distants par l’intermédiaire d’un réseau, généralement internet. Le cloud computing et le big data sont deux concepts liés car c’est grâce au cloud computing que nous pouvons traiter du Big Data sur nos laptop.
+						Le cloud computing est l’exploitation de la puissance ou de stockage de serveurs informatiques en passant par un réseau, généralement internet. Le cloud computing et le big data sont deux concepts liés car c’est grâce au cloud computing que nous pouvons traiter du Big Data sur nos laptop.
 					</aside>
 					<p><b><font size="7" color = "#C11B17">Cloud Computing</font></b> = L'exploitation de la puissance de stockage de serveurs informatiques distants</p>
 					<br>
@@ -182,140 +283,190 @@
 				</section>
 				
 				<section>
-					
-					<section>
-						<aside class="notes">
-							ll existes des milliers d’outils informatique pour le Big Data. Nous allons donc catégoriser ces différents outils en 7 parties et donner quelques exemples.
+					<aside class="notes"><ol>
+						<li>Logiciel respecte criteres établis par l'Open Source initiative</li>
+						<li>Vendre ou "donner" le logiciel</li>
+						<li>Permet de modifier le code et créer des travaux dérivé</li>
 						</aside>
-					
-						<h2>Big Data</h2>
-						<ol>
-							<li>Gestion et Stockage de données (Data Storage)</li> <br>
-							<li class="fragment" data-fragment-index="1">Nettoyage des données (Data Cleaning)</li><br>
-							<li class="fragment" data-fragment-index="2">Exploration de données (Data Mining)</li><br>
-							<li class="fragment" data-fragment-index="3">Analyse de données (Data Analysis)</li><br>
-							<li class="fragment" data-fragment-index="4">Visualisation de données (Data Visualisation)</li> <br>
-					</section>
+					<h2>Open-Source</h2>
+					<ol>
+						<li>Libre redistribution</li><br>
+						<li>Accès au code source</li><br>
+						<li class="fragment">Évolution d'un projet peut être très rapide</li>
+					</ul>
 				</section>
 				
 				<section>
-					<section>
-						<h3>Gestion et Stockage de données (Data Storage)</h3>
-						<aside class="notes">
-							Hadoop qui est la solution Big Data la plus connue et la plus courante dans ce domaine. Il y a également Cloudera, MangoDB, Talend etc.
+					<aside class="notes"><ol>
+						<li>Permet une montée en charge approximativement linéaire</li>
+						<li>Grande rapidité, simplicité et des méthodes de développements agiles</li>
+						<li>Dépourvus de transaction : NON ATOMIQUE (Tout ou rien)</li>
+						<li>Non relationnelles</li>
 						</aside>
-						<img width="579" height="150" data-src="images/hadoop.png">
-						<img class="fragment" data-fragment-index="1" width="400" height="97" data-src="images/cloudera.png">
-						<img class="fragment" data-fragment-index="2" width="368" height="100" data-src="images/mango.png">
-						<img class="fragment" data-fragment-index="3" width="376" height="100" data-src="images/talend.png">
-					</section>
-				
-					<section>
-						<h3>Nettoyage des données (Data Cleaning)</h3>
-						<aside class="notes">
-							Avant que vous ne puissiez vraiment explorer des données selon leur utilités il faut les nettoyer. Quand on récupère des données nous n’avons pas systématiquement un ensemble de données propre, bien structuré.
-     OpenRefine est un outil open source qui est dédié à nettoyer un ensemble de données désordonné, tout comme DataCleaner.
-						</aside>
-						<img class="fragment" data-fragment-index="1" width="512" height="125" data-src="images/or.png">
-					</section>
-				
-					<section>
-						<aside class="notes">
-							Le data mining a pour objet l’extraction d’un savoir ou d’une connaissance à partir de                                                                  grandes quantités de données, par des méthodes automatiques ou semi-automatiques. Elle se propose d’utiliser un ensemble d’algorithmes issus de disciplines scientifiques diverses telles que les statistiques, l’intelligence artificielle ou l’informatique. Pour cela il existe RapidMiner, IBM SPSS Modeler, Oracle Data Mining, Teradata et plusieurs autres.
-						</aside>
-						<h2>Exploration de données (Data Mining)</h2>
-						<img class="fragment" data-fragment-index="1" width="280" height="100" data-src="images/rapidminer.png">
-						<img class="fragment" data-fragment-index="2" width="250" height="100" data-src="images/IBM.png">
-						<img class="fragment" data-fragment-index="3" width="704" height="100" data-src="images/oracle.png">
-						<br>
-						<img class="fragment" data-fragment-index="4" width="225" height="150" data-src="images/teradata.png">
-					</section>
-				
-					<section>
-						<h3>Analyse de données (Data Analysis)</h3>
-						<aside class="notes">
-							Alors que l’exploration de données permet de parcourir toutes vos données à la recherche de modèles reconnus au paravant, l’analyse de données permet d’évaluer l’impact au fil du temps. L’analyse nous permet de poser des questions bien spécifique et de trouver leurs réponses dans les données.
-     Voici une liste d’outils qui fait cela : Qubole, BigML, Statwing
-						</aside>
-						<img class="fragment" data-fragment-index="1" width="355" height="150" data-src="images/qubole.png">
-						<br>
-						<img class="fragment" data-fragment-index="2" width="312" height="100" data-src="images/bigml.png">
-						<br>
-						<img class="fragment" data-fragment-index="3" width="319" height="100" data-src="images/statwing.png">
-					</section>
-					
-					<section>
-						<h3>Visualisation de données (Data Visualisation)</h3>
-						<aside class="notes">
-							   Les outils suivants permettent à vos données de prendre vies. En effet, pas tout le monde n’arrive à lire une base de données. C’est pour cela que Tableau, Silk, Chartio le permettent.
-						</aside>
-						<img class="fragment" data-fragment-index="1" width="480" height="94" data-src="images/tableau.png">
-						<img class="fragment" data-fragment-index="2" width="750" height="160" data-src="images/chartio.png">
-					</section>
+					<h2>NoSQL</h2>
+					<p>"Not Only"SQL</p>
+					<ol>
+						<li class="fragment" data-fragment-index="1">Clustérisables</li><br>
+						<li class="fragment" data-fragment-index="2">Dépourvus de schéma</li><br>
+						<li class="fragment" data-fragment-index="3">Dépourvus de transactions</li><br>
+						<li class="fragment" data-fragment-index="4">Non-relationnelles</li><br>
+						<li class="fragment" data-fragment-index="5">Open-Source</li>
+					</ol>
 				</section>
 				
+				<section>
+					<aside class="notes">Agrégat : cumul de données.<ol>
+						<li>BDOD : Suite ordonnée de clé-valeur</li>
+						<li>BDOC : Structuré en colonnes au lieu de lignes (plus facile à ajouter des colonnes que des lignes)</li>
+						<li>BDOG : Orienté objet utilisant la théorie des graphes + facile à comprendre / - de compléxité</li>
+						</aside>
+
+					<h2>Différentes catégories de solutions NoSQL</h2>
+					<p></p>
+					<ul>
+						<li>Base de données orienté agrégats <b>(BDOA)</b>
+						<ol style="margin-left: 75px">
+								<li class="fragment" data-fragment-index="1">Entrepôts clé-valeur</li>
+								<li class="fragment" data-fragment-index="2">Bases orientées documents</li>
+								<li class="fragment" data-fragment-index="3">Bases orientées colonnes</li>
+							</ol></li><br>
+						<li class="fragment" data-fragment-index="4">Base de données orientées graphiques</li>
+					</ul>
+				</section>
+				
+				<section>
+					<aside class="notes">Modèle de programmation récent, qui permet d'automatiser déploiement de traitements massivement sur clusters.<ol>
+						<li>Mapping : Traite données d'entrée et produit des paires clé-valeur</li>
+						<li>Reduce : Prend ensuite les paires de clés et les combines l'une avec l'autre</li>
+						<h3>Calcul parallèle puis traite les données ensemble</h3>
+						</aside>
+					<h2>MapReduce</h2>
+					<img width="732.6" height="550" src="images/mr.png">
+				</section>
+				
+				<section>
+					<aside class="notes"><ol>
+						<li>Projet Open-source de Apache</li>
+						<li>L'un des seuls qui arrivent à s'attaquer à des gros volumes de données</li>
+						<h3>Open Source => Communauté très active et très dynamique</h3>
+						</aside>
+					<h2>Hadoop</h2>
+					<img width="1000" height="259" src="images/hadoop.png">
+					<h3>Open-source</h3>
+				</section>
+				
+				<section>
+					<aside class="notes"><ol>
+						<li>ZooKeeper: Gestion de configuration</li>
+						<li>HBase: Système Gestion de base de données</li>
+						<li>Ambari: Supervision</li>
+						<li>Pig: Plateforme Haut niveau</li>
+						<li>Hive: entrepot d'analyse, synthèse</li>
+						<li>HDFS: Système de fichier</li>
+						<li>oozie: Ordonnance de flux</li>
+						<li>sqoop: Terminal servant à transferer données BD relationnelles à Hadoop</li>
+						</aside>
+					<h3>Composants de Hadoop</h3>
+					<img width="802" height="550" src="images/inf1.png">
+				</section>
+				
+				<section>
+					<aside class="notes"><ol>
+						<li>Fondées par experts de Hadoop</li>
+						<li>Ajoute propre interface graphique</li>
+						<li>basé sur hadoop</li>
+					</aside>
+
+					<img width="400" height="97" src="images/inf2.png">
+					<img width="856" height="400" src="images/inf3.png">
+				</section>
+				
+				<!//////////////////////////////////////////////////////////////MAXIME////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 				<section>
 					<h2>Les outils mathématiques</h2>
+					<aside class="notes"><ul>
+						<li>Les mathématiques font partie intégrale du big data et lui sont indispensable</li>
+						<li>Le Big Data a contraint les mathématiques à s'adapter à de tels volumes</li>
+						<li>Les mathématiques sont utilisés dans un processus d'analyse, d'explo et de traduction</li></aside>
 				</section>
 				
 				<section>
  	
-					<h2>Géométrie</h2>
-					<p>Trouver le bon espace ou un modèle de déformations</p>
- 	
+					<h2>Data Mining</h2>
+					<img width="488" height="264" src="images/mat1.png">
+					<p>Data mining = Outils pour faciliter l'exploration et l'analyse des données d'une base décisionelle</p>
+					<aside class="notes"><ul>
+						<li>Efficace pour extraire des informations à partir de grosses qtés de données</li>
+						<li>Avec l'augmentation de la capacité de stockage des supports informatique, on peut stocker n maximum de données dans le Data Warehouse</li>
+						<li>Il y a différentes techniques d'analyse que l'on choisit selon le type de données et l'étude que l'on veut entreprendre</li></aside>
 				</section>
  	 	
 				<section>
-
-					<h2>Statistique</h2>
+					<h2>Analyse</h2>
 					<ul>
-						<li>Estimer la distance géodésique</li>
-						<li>Étudier la variabilité, plans d’expérience dynamiques, numériques</li>
+						<li>1ère étape :</b>
+						<ul style="margin-left: 75px">
+								<li>Collecter les données (Partie la plus importante) les plus "propres" possibles</li>
+						</ul></li><br>
+						
+						<li>2ème étape :</b>
+						<ul style="margin-left: 75px">
+								<li>S'assurer que la quantité de données soit suffisante pour ne pas fausser les résultats</li>
+						</ul></li><br>
+						
+						<li>3ème étape :</b>
+						<ul style="margin-left: 75px">
+								<li>On analyse celle-ci à l'aide de méthodes mathématiques</li>
+						</ul></li><br>
+						
 					</ul>
 				</section>
  	
 				<section>
+					<aside class="notes"><ul>
+						<li>Les 3V ont modifié l'approche de la stat traditionnelle</li>
+						<li>Le nb de variables peut dépasser la taille de l'échantillon</li>
+						</aside>
  	
-					<h2>Théorie des graphes</h2>
-					<p>Estimation de la distance en trouvant les "chemins les plus courts" entre les points</p>
- 	
+					<h2>Statistiques</h2>
+					<ul>
+						<li class="fragment" data-fragment-index="1">Statistiques traditionnelles : Plus un sondeur va acquérir des données, plus le pourcentage d'erreur sera faible</li><br>
+						<li class="fragment" data-fragment-index="2">Statistiques du Big Data : Chaque individu a beaucoup de données</li><br>
+					</ul>
+					<h3 class="fragment" data-fragment-index="3">Fléau de dimensionnalité</h3>
 				</section>
  	
 				<section>
- 	
-					<h2>Optimisation</h2>
-					<p>Calculer la distance minimale</p>
- 	
-				</section>
- 	
-				<section>
- 	
-					<h2>Clustering (ou partitionnement de données)</h2>
-					<p>Trouver des groupes similaires au sens de la distance</p>
- 	
-				</section>
- 	 	
-				<section>
- 	
 					<h2>Apprentissage</h2>
-					<p>Prévoir l’appartenance à un groupe, apprentissage renforcé</p>
- 	
+					<aside class="notes">Ensemble des méthodes maths qui permettent dans les grands espaces de données, classer des éléments, de regrouper des parties semblables de l'échantillon ou encore prédire quels facteurs expliquent tel effet
+       Cela revient à tracer la meilleure courbe passant par tout les paramètres connus et à répéter ce processus sur un autre individu.</aside>
 				</section>
  	
 				<section>
- 	
-					<h2>Probabilités</h2>
-					<p>Analyse de graphes, matrices aléatoires, chaînes de Markov…</p>
- 	
+					<h2>Machine Learning</h2>
+					<aside class="notes"> Concerne la conception, l'analyse, le développement et l'implémentation de méthodes permettant à une machine de réaliser des tâches complexes grâce a des algorithmes.<br>
+       L'analyse peut concerner des graphes, des arbres ou bien des courbes<br>
+       La difficulté réside dans le fait que l'ensemble de tout les comportements possibles devient rapidement trop complexe à décrire pour les langages de programmation actuels.<br>
+       Ce modèle est adaptatif, c'est a dire qu'il prend en compte l'évolution des bases d'information,<br>
+ C'est ce qu'on appelle "apprendre"</aside>
 				</section>
- 	
 				
- 	
 				<section>
- 	
-					<h2><u>Beaucoup de connexions Mathématiques/Informatique</u></h2>
- 	
+					<h2>VISUALISATION DE DONNEES</h2>
+					<aside class="notes"> La visualisation de données va aider les data scientists ou bien même les décideurs à voir ce que les stats ne montrent pas. <br> INTERVIENT A TOUTES LES ETAPES DU TRAVAIL D'UN DATA SCIENTIST<br> <br> -  Visualisation va servir à detecter les valeurs abérrantes ou manquantes <br> <br> - On pourra valider certaines hypotheses comme par exemple la linéarité de certaines relations <br> <br> -  Visualisation va aider à identifier les variables les plus liées <br> <br> - Les courbes d'erreurs permettront de trouver les paramètres optimaux <br> <br> -  Cela va permettre au décideur de voir l'information sans aucune connaissance stat</aside>
+					<ul>
+						<li class="fragment" data-fragment-index="1">Préparation des données</li>
+						<li class="fragment" data-fragment-index="2">Choix d'un modèle</li>
+						<li class="fragment" data-fragment-index="3">Apprentissage</li>
+						<li class="fragment" data-fragment-index="4">Optimisation</li>
+						<li class="fragment" data-fragment-index="5">Prédiction</li>
+					</ul>
 				</section>
+				
+				<section>
+					<h1>Conclusion</h1>
+				</section>
+				
 				<section style="text-align: left;">
 					<h1>FIN</h1>
 					<p>Merci pour votre écoute</p>

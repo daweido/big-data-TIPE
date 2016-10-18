@@ -52,7 +52,10 @@ html:-webkit-full-screen-ancestor {
 
 html:-moz-full-screen-ancestor {
   background-color: inherit; }
-
+  
+.imgContainer{
+    float:left;
+}
 /*********************************************
  * VIEW FRAGMENTS
  *********************************************/
