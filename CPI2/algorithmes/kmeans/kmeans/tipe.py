@@ -38,7 +38,7 @@ def read_data(file_name):
 def init_centroids (datas, k):
 	centroids_create = datas.copy()
 	np.random.shuffle(centroids_create)
-	return np.asarray9centroids_create[:k])
+	return centroids_create[:k]
 
 
 
@@ -59,34 +59,39 @@ def close_centroid(datas, centds):
 qui le déplace ensuite par rapport à ce vecteur moyen'''
 def movmnt_centroids(dat, pclose, cent):
 	for i in range(len(cent)):
-		indices = np.where(pclose == i)
+		indices = np.where(pclose == i)[0]
 		sumx = 0
 		sumy = 0
+		card = len(indices)
 		for j in indices:
 			sumx += dat[j][0]
 			sumy += dat[j][1]
-		card = len(indices)
 		cent[i][0] = sumx//card
 		cent[i][1] = sumy//card
 	return cent
 
 #Fonction qui affecte les nouvelles positions des centroids
+itera = 0
 def ite_movmt_centro(data,centr):
+	global itera
 	done = False
-	epsi = 0.000000000000001
+	epsi = 0
 	def ecart (copie,origin,index):
 		ex = abs(ccentre[index][0] - centr[index][0])
 		ey = abs(ccentre[index][1] - centr[index][1])
 		return True if (ex <= epsi and ey <= epsi) else False
 
 	while (not done):
-		ccentre = centr.copy
+		itera += 1
+		print(itera)
+		ccentre = centr.copy()
 		pp = close_centroid(data,centr)
 		centr = movmnt_centroids(data, pp, centr)
-		for i in range(len(ccentre)):
+		lon = len(ccentre)
+		for i in range(lon):
 			if ecart(ccentre,centr,i):
 				if (i == (len(ccentre)-1)):
-					done = False
+					done = True
 				else:
 					pass
 			else:
@@ -109,6 +114,7 @@ coordonnées de chaque centroide après que les centroides convergent et affiche
 chaque points avant et après l'application de kmeans'''
 def kmeans(data, k):
 	plt.subplot(121)
+	plt.suptitle('K-Means', fontsize=14, fontweight='bold')
 	centroids = init_centroids(data, k)
 	cmap = get_cmap(k+1)
 	ccentroids = close_centroid(data, centroids)
@@ -116,21 +122,22 @@ def kmeans(data, k):
 	for i in range(len(ccentroids)):
 		plt.scatter(data[i, 0], data[i, 1], c=cmap(ccentroids[i]))
 	plt.scatter(centroids[:, 0], centroids[:, 1], s=20, c='black')
-	plt.title('Avant mouvement des centroïdes')
+	plt.title('Avant')
 	plt.grid(False)
 	plt.axis('off')
 
 	plt.subplot(122)
 	centroids = ite_movmt_centro(data,centroids)
 	ccentroids = close_centroid(data, centroids)
-	for i in range(len(ccentroids) - 1):
+	for i in range(len(ccentroids)):
 		plt.scatter(data[i, 0], data[i, 1], c=cmap(ccentroids[i]))
-	plt.scatter(centroids[:, 0], centroids[:, 1], s=20, c='black')
-	plt.title('Après mouvement des centroïdes')
+	plt.scatter(centroids[:, 0], centroids[:, 1], s=55, c='black')
+	plt.title('Après %d itérations' % itera)
 	plt.grid(False)
 	plt.axis('off')
 
 	fig = plt.gcf()
+
 	fig.canvas.set_window_title('Algorirthme K-Means')
 	print("Coordonnée des centroides :")
 
@@ -140,8 +147,8 @@ def kmeans(data, k):
 
 
 #Fonction kmeans_rand appelle kmean avec des données aléatoire
-def kmeans_rand(min,max,n,k):
-	return kmeans(np.random.randint(min, max, size=(n, 2)), k)
+def kmeans_rand(mini,maxi,n,k):
+	return kmeans(np.random.randint(mini, maxi, size=(n, 2)), k)
 
 
 
