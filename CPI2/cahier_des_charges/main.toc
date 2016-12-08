@@ -1,4 +1,0 @@
-\select@language {french}
-~\hfill \textbf {Page}\par 
-\contentsline {section}{\numberline {1}D\'ecouvrir les fonctionalit\'ees de Spark}{2}
-\contentsline {section}{\numberline {2}\'Ecrire des programmes en Python sous Spark pour algorithmes d'analyses}{2}
