@@ -102,7 +102,7 @@ def get_cmap(N):
 	return map_index_to_rgb_color
 
 
-
+#Ajouter les calculs d'intérations
 
 '''Fonction kmeans, est la fonction principale qui appelle toute les fonctions ci-dessus. Elle sort un array avec les
 coordonnées de chaque centroide après que les centroides convergent et affiche dans une figure le grpahique de chaque
@@ -148,6 +148,3 @@ def kmeans_rand(min,max,n,k):
 #Fonction kmeans_file appelle kmean avec des données pris d'un fichier
 def kmeans_file(file_n,k):
 	return kmeans(np.array(read_data(file_n)), k)
-
-
-#Chercher comment calculer les itérations
